@@ -1,0 +1,5 @@
+deploy:
+  stage: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=modfiq-server --api-key=09b8a05c-257a-43e2-b665-74175a4abe9d
